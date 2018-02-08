@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Портфолио Кривошеева Евгения</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+    <style>
+        html,body,h1,h2,h3,p{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width:1440px;
+            margin:auto;
+        }
+        .header{
+            background-color: #082841;
+        }
+        .img{
+            position: absolute;
+            overflow: hidden;
+            height: 672px;
+            width: 552px;
+        }
+        .img img{
+            
+        }
+        .h_text{
+            min-height:672px;
+            margin-left:648px;
+            font-family: Georgia, sans-serif ;
+            color: #FFFFFF;
+            /*font-size: 20px;*/
+            /*line-height: 28px;*/
+        }
+        .profession{
+            margin:0px;
+            padding-top:65px;
+            font-size:24px;
+            font-family: Helvetica-Bold, sans-serif ;
+            line-height: 29px;
+        }
+        .name{
+            margin-top: 11px;
+            margin-bottom: 0px;
+            font-size:40px;
+            font-family: Helvetica-Bold, sans-serif ;
+            line-height: 48px;
+        }
+        .description{
+            max-width: 544px;
+            /*height: 196px;*/
+            margin-right:40px;
+            font-size: 20px;
+            line-height: 28px;
+            padding-top:234px;
+            text-align: justify;
+        }
+        .content{
+            max-width:944px;
+            margin:0 auto;
+        }
+        .title{
+            font-family: Helvetica-Bold, sans-serif ;
+            font-size:40px;
+            line-height: 48px;
+        }
+        .expectation_title{
+            margin-top:106px;
+            margin-bottom: 38px;
+        }
+        .expect{
+            height:218px;
+            background-color: #E6F0F0;
+            border-radius: 4px;
+            display:inline-block;
+            padding:25px 32px 15px 32px;
+            box-sizing: border-box;
+        }
+        .b1{
+            width:58%;
+            margin-right: 1.5%;
+            margin-bottom:10px;
+        }
+        .b2{
+            width:40.5%;
+            margin-bottom:10px;
+        }
+        .b3{
+            width:40.5%;
+            margin-right: 1.5%;
+        }
+        .b4{
+            width:58%;
+        }
+        .my_work_title{
+            margin-top:129px;
+            margin-bottom: 63px;
+        }
+        .expect div{
+            display:table-cell;
+            vertical-align:bottom;
+            height:130px;
+            font-family: Georgia, sans-serif ;
+            font-size:16px;
+            line-height: 24px;
+        }
+        .title2{
+            font-family: Helvetica-Bold, sans-serif ;
+            font-size: 24px;
+            line-height: 29px;   
+        }
+        .carousel_control{
+            display:none;
+        }
+        .work{
+            float:left;
+            margin-bottom:144px;
+            position: relative;
+            width:100%;
+
+            /*vertical-align: middle;*/
+            /*display:flex;
+            align-items:stretch;*/
+        }
+        .work div{
+            /*display:inline-block;*/
+        }
+        .imgs{
+            width:58%;
+            /*height:100%;*/
+            /*min-height: 1px;*/
+            float:left;
+            box-shadow: 0px 10px 20px 10px #e8e8e8;
+           
+        }
+        .imgs div{
+            
+            
+        }
+        .imgs img{
+            display:none;
+
+            width:100%;
+            
+            border-radius: 2px;
+
+        }
+        .imgs #w1_id3{
+            display:block;
+        }
+        /*.imgs #w1_id2 ~img{
+            display:none;
+        }*/
+        /*.imgs img:first-child{
+            display:block;
+        }*/
+        .imgs img:target ~#w1_id1,
+        .imgs img:target ~#w1_id2,
+        .imgs img:target ~#w1_id3{
+            display:none;
+        }
+        .imgs img:target{
+            display:block;
+           /* order:-1;*/
+        }
+       /* .imgs img:target ~img{
+            display:none;
+        }*/
+        
+        .w1_carousel_control{
+            width: 8px;
+            top: 50%;
+            left: 58%;
+            margin: 0 16px;
+            margin-top: -39px;
+            position: absolute;
+            
+        }
+        
+        .w1_carousel_control a{
+            display: block;
+            width:8px;
+            height:8px;
+            background: #DD3E18;
+            border-radius: 50%;
+        }
+        .w1_carousel_control a:not(:first-child){
+            margin-top:24px;
+        }
+        .work_description{
+            float:left;
+            width:35%;
+            margin-left:7%;
+        }
+        .site_link{
+            margin-top:16px;
+            font-family: Georgia, sans-serif;
+            text-decoration: none;
+            color:#DD3E18;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .site_description{
+            display: table-cell;
+            vertical-align:bottom;
+            font-family: Georgia, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            /*padding-top:234px;*/
+            text-align: justify;
+            height:230px;
+        }
+        .clear_float{
+            clear:both;
+        }
+        .contact_info{
+            width: 100%;
+            height:795px;
+            margin: 0;
+            background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+        }
+        .contact_info_2{
+            max-width: 944px;
+            margin:0 auto;
+            padding-top: 81px;
+            padding-bottom: 61px;
+        }
+        .contact_info_3{
+            width:100%;
+            margin-top:61px;
+
+        }
+        .contact_info_3 > div{
+            vertical-align: top;
+        }
+        .ci_left{
+            /*float:left;*/
+            display:inline-block;
+            width:32%;
+            margin-right:10%;
+            min-height: 1px;
+        }
+        .ci_text{
+            font-family: Georgia, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom:20px;
+        }
+        .ci_text2{
+            font-family: Georgia, sans-serif;
+            font-size: 16px;
+            line-height: 24px;   
+        }
+        .ci_link{
+            display:block;
+            font-family: Georgia;
+            font-size: 16px;
+            color: #DD3E18;
+            line-height: 32px;
+        }
+        .ci_link div{
+            display:inline-block;
+            width:30px;
+            font-size: 17pt;
+        }
+        .fa-facebook-square{
+            color:#4267b2;
+        }
+        .fa-vk{
+            color:#6296ca;
+        }
+        .fa-github{
+            color:#000;
+        }
+        .ci_right{
+            /*float:left;*/
+            display:inline-block;
+            /*position: relative;
+            top: 138px;*/
+            width:58%;
+            min-height: 1px;
+        }
+        .ci_right input,.ci_right textarea{
+            width: 100%;
+            box-sizing: border-box;
+            height: 48px;
+            padding: 12px 16px 12px 16px;
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            border-radius: 4px;
+            border-width:0;
+        }
+        .ci_right textarea{
+            height:192px;
+            resize: none;
+            margin-bottom: 10px;
+        }
+        .attach{
+            font-family: Helvetica-Bold, sans-serif;
+            font-size: 16px;
+            color: #DD3E18;
+            line-height: 24px;
+            font-weight: bold;
+            margin-bottom: 32px;
+        }
+        .attach>svg{
+            padding-right:11px;
+        }
+        
+        .ci_right input:last-child{
+            height:49px;
+            background: #DD3E18;
+            border-radius: 4px;
+            border: 0px;
+            font-family: Helvetica-Bold, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        .ci_right input:last-child:hover{
+            background: #ff5e37;
+
+
+        }
+        @media screen and (max-width: 1440px) {
+            .container{
+                width:100%;
+                margin:auto;
+
+            }
+            /*.img{
+                width:40%;
+            }
+            .img img{
+                margin-left:-1%;   
+            }*/
+        }
+        @media screen and (max-width: 1200px) {
+            .img{
+                height: 672px;
+                width: 424px;
+            }
+            .img img{
+                margin-left: -55px;
+            }
+             .h_text{
+                /*height:768px;*/
+                margin-left:519px;/*519*/
+                font-family: Georgia, sans-serif ;
+                color: #FFFFFF;
+                /*font-size: 20px;*/
+                /*line-height: 28px;*/
+            }
+
+        }
+        @media screen and (max-width: 1024px) {
+            .img{
+               height: 768px;
+                width: 424px;
+            }
+            .img img{
+                
+            }
+            .h_text{
+                min-height:768px;
+                margin-left:469px;/*519*/
+            }
+            
+            .description{
+                max-width: 464px;
+                font-size: 20px;
+                line-height: 28px;
+                padding-top:206px; /*266px*/
+            }
+            .content,.contact_info_2{
+                margin:0 40px;
+            }
+
+
+        }
+        @media screen and (max-width: 900px) {
+            .description{
+                padding-top:100px; 
+            }
+            .site_description{
+                padding-top:10px;
+                height:100px;
+            }
+        }
+        @media screen and (max-width: 850px) {
+            .description{
+                padding-top:30px; 
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .img{
+                top:224px;
+                z-index: 2;
+                width:384px;
+                height:384px;
+                margin-left:50%;
+                left:-192px;
+                border-radius:50%;
+                /*left: 50%;
+                margin-left: -25%;*/
+            }
+            .h_text{
+                min-height:1024px;
+                /*margin:auto;*/
+                font-family: Georgia, sans-serif ;
+                color: #FFFFFF;
+                /*font-size: 20px;*/
+                /*line-height: 28px;*/
+                margin: auto;
+                text-align: center;
+            }
+            
+            .profession{
+                padding-top:97px;
+                font-size:24px;
+                font-family: Helvetica-Bold, sans-serif ;
+                line-height: 29px;
+            }
+            .name{
+                margin-top: 11px;
+                font-size:40px;
+                font-family: Helvetica-Bold, sans-serif ;
+                line-height: 48px;
+            }
+            .description{
+                margin:0 15px;
+                display:inline-block;
+                max-width: 544px;
+                /*height: 196px;*/
+                /*margin-right:40px;*/
+                font-size: 20px;
+                line-height: 28px;
+                padding-top:498px;
+               /* text-align: justify;*/
+                text-align:center;
+            }
+            .content{
+                margin:0 32px;
+            }
+
+            .work{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 96px;
+                /*position:relative;
+                width:100%;*/
+            }
+            .w1_carousel_control{
+                position:static;
+                margin-top:10px;
+                height:8px;
+                width:auto;
+                text-align: center;
+            }
+            .w1_carousel_control a{
+                display: inline-block;
+            }
+            .w1_carousel_control a:not(:first-child){
+                margin-top:0px;
+                
+                margin-left:25px;
+            }
+            .imgs{
+                width:100%;
+               /* position: absolute;
+                
+                top:147px;*/
+            }
+            .work_description{
+                height:147px;
+                order:-1;
+                margin:0;
+            }
+            .site_description{
+                position: absolute;
+                top:7px;
+                right:0;
+                width:58%;
+            }
+        /*Контактные данные*/
+            .contact_info{
+                height:820px;
+            }
+            .contact_info_2{
+                margin:0 32px;
+                padding-top: 33px;
+            }
+            .contact_info_3{
+                margin-top:0;
+            }
+            .contact_info_3>div{
+                display:block;
+                width:100%;
+            }
+            .title_contacts{
+                margin-bottom: 21px;
+            }
+            .ci_left{
+                margin-bottom: 44px;
+            }
+            .ci_left>div{
+                display:inline-block;
+                vertical-align: top;
+            }
+            .ci_text{
+                width:55%;
+                margin-right:13%;
+                text-align: justify;
+            }
+            .ci_text2>div{
+                display:none;
+            }
+
+        }
+        @media screen and (max-width: 600px) { 
+            .content{
+                margin:0 16px;
+            }
+            .title{
+                font-size:32px;
+                line-height: 40px;
+            }
+            .expectation{
+                height:218px; /*306*/
+            }
+            .expect{
+                width:94%;
+                position: absolute;
+                display:none;
+                z-index: 0;
+                box-sizing: border-box;
+                margin:0;
+                padding:25px 24px 15px 24px;
+            }
+            #id1{
+                display:inline-block;
+            }
+            .expect:target{
+                display:inline-block;
+                z-index:3;
+            }
+            .carousel_control{
+                display:block;
+                margin:auto;
+                padding:0;
+                margin-top:24px; /*242*/
+                width:104px;
+                height:8px;
+            }
+            .carousel_control a{
+                display:inline-block;
+                width:8px;
+                height:8px;
+                background: #DD3E18;
+                border-radius: 50%;
+            }
+            .carousel_control a:not(:first-child){
+                margin-left:24px;
+            }
+            .my_work_title{
+                margin-top:83px;
+            }
+            .work{
+                /*align-items:stretch;*/
+                margin-bottom: 96px;
+            }
+            .work_description{
+                width:100%;
+                height:auto;
+            }
+            .site_description{
+                margin:0;
+                margin-bottom: 15px;
+                margin-top:20px;
+                width:100%;
+                height:auto;
+                position:static;
+                display:block;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .contact_info_2{
+                margin:0 14px;
+                padding-top: 43px;
+            }
+            .title_contacts {
+                margin-bottom: 18px;
+            }
+            .contact_info_3>.ci_left {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-bottom:32px;
+            }
+            .ci_left>div{
+                display:block;
+                width:100%;
+            }
+            .ci_text{
+                margin-top:34px;
+            }
+        }
+        @media screen and (max-width: 450px) { /*336*/
+            .img{
+                top:168px;
+                z-index: 2;
+                width:144px;
+                height:144px;
+                margin-left:50%;
+                left:-72px;
+                border-radius:50%;
+                /*left: 50%;
+                margin-left: -25%;*/
+            }
+            .img img{
+                width: 136%;
+                margin-left: -16px;
+            }
+            .h_text{
+                min-height:648px;
+            }
+            .profession{
+                padding-top:33px;
+                font-size:16px;
+                font-family: Helvetica-Bold, sans-serif ;
+                line-height: 19px;
+            }
+            .name{
+                margin: 15px 65px;
+                margin-bottom: 0px;
+                font-size:32px;
+                font-family: Helvetica-Bold, sans-serif ;
+                line-height: 40px;
+            }
+            .description{
+                margin:0 15px;
+                margin-bottom: 42px;
+                display:inline-block;
+                max-width: 305px;
+                /*height: 196px;*/
+                /*margin-right:40px;*/
+                font-size: 16px;
+                line-height: 24px;
+                padding-top:195px;
+               /* text-align: justify;*/
+                text-align:center;
+            }
+        }
+        @media screen and (max-width: 336px) {
+            .name{
+                margin: 15px 15px;
+                margin-bottom: 0px;
+            }
+        }
+        
+    </style>
+</head>
+    
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="img">
+                <img src="img\photo.jpg" alt="Я">
+            </div>
+            <div class=h_text>
+                <h3 class="profession">
+                    PHP/JS программист
+                </h3>
+                <h1 class="name">
+                    Кривошеев Евгений
+                </h1>
+                <div class="description">
+                    Начинающий веб-разработчик. В данный момент работаю как и с простой версткой сайтов, так и с программированием функционала. Работаю около двух месяцев. До этого работал 6 лет инженером по АСУП (системным администратором). Имею высшее техническое образование в области информационных технологий. Усидчивый, стрессоустойчивый, ответственный.
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="expectation_title title">
+                Ожидания от ШРИ
+            </h1>
+            <div class="expectation"><!--
+             --><div id="id1" class="expect b1">
+                    <h3 class="title2">Знания</h3>
+                    <div>Получение новых знаний поможет мне работать более эффективно в различных областях веб-разработки</div>
+                </div><!--
+             --><div id="id2" class="expect b2">
+                    <h3 class="title2">Опыт</h3>
+                    <div>Приобретение интересного опыта внесет разнообразие в рутинную работу</div>
+                </div><!--
+             --><div id="id3" class="expect b3">
+                    <h3 class="title2">Прогресс</h3>
+                    <div>Улучшение навыков фронт-енд-разработки и дальнейший рост как специалиста</div>
+                </div><!--
+             --><div id="id4" class="expect b4">
+                    <h3 class="title2">Трудоустройство</h3>
+                    <div>Получение работы в огромной и известной компании</div>
+                </div><!--
+            
+        --></div>
+            <div class=carousel_control><!--
+             --><a href="#id1"></a><!--
+             --><a href="#id2"></a><!--
+             --><a href="#id3"></a><!--
+             --><a href="#id4"></a><!--
+         --></div>
+            <h1 class="my_work_title title">
+                Мои работы
+            </h1>
+            <div class="work"><!--
+             --><div class="imgs"><!--
+                    --><img id="w1_id1" src="img\work_1\pic1.png" alt="studyforeignwords"><!--
+                    --><img id="w1_id2" src="img\work_1\pic2.png" alt="studyforeignwords"><!--
+                    --><img id="w1_id3" src="img\work_1\pic3.png" alt="studyforeignwords"><!--
+             --></div>
+                <div class="w1_carousel_control"><!--
+                 
+                     --><a href="#w1_id1"></a><!--
+                     --><a href="#w1_id2"></a><!--
+                     --><a href="#w1_id3"></a><!--
+                 
+             --></div><!--
+             --><div class="work_description">
+                    <h3 class="title2">Изучение иностранных слов</h3><br>
+                    <a class="site_link"  href="http://studyforeignwords.h1n.ru/" target="_blank">studyforeignwords.h1n.ru</a>
+                    <div class="site_description">Сайт был создан для получения практических навыков. Написан на движке Laravel. Для адаптивности использовался Bootstrap. В базе почти 1000 популярных английских слов. </div>
+                </div><!--
+         --></div>
+            <div class="clear_float"></div>
+        </div>
+    </div> <!-- end container -->
+    
+    <div class="contact_info">
+        <div class="contact_info_2">
+            <h1 class="title_contacts title">Контактная информация</h1>
+            <div class="contact_info_3"><!--
+             --><div class="ci_left">
+                    <div class="ci_text">
+                        Я открыт для новых проектов. Вы можете прислать мне для оценки примерное техническое задание или просто описание проекта своими словами.
+                    </div>
+                    <div class="ci_text2">
+                        <div>Ссылки на мои соцсети:</div>
+                        
+                        <a class="ci_link">
+                            <div><i class="fab fa-facebook-square fa-fw"></i></div> 
+                            Facebook
+                        </a>
+                        <a class="ci_link">
+                            <div><i class="fab fa-vk fa-fw"></i></div>
+                            ВКонтакте 
+                        </a>
+                        <a class="ci_link">
+                            <div><i class="fab fa-github fa-fw"></i></div>
+                            GitHub
+                        </a>
+                    </div>
+                </div><!--
+             --><div class="ci_right">
+                     <form name="f1" method="post" action="">
+                        <input name="login" type="text" size="25" maxlength="30" placeholder="Имя" /> <br />
+                        <input name="pd" type="email" size="25" maxlength="30" placeholder="Почтовый ящик" /> <br />
+                        <textarea placeholder="Сообщение"></textarea>
+                        <div class="attach"><i class="fas fa-file"></i>Прикрепить ТЗ</div>
+                        <input type="submit" name="enter" value="Отправить" />
+                    </form>
+                </div><!--
+         --></div>
+        </div>
+    </div>
+</body>
+</html>
